@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunisian Graduates Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="title">Tunisian Graduates Employability. Together to make a change! </h1>
+      <p id="description">This is a survey form made by a Tunisian student to make statistics about employability rates among Tunisian college grads. *and also to learn how to code 🙈*</p>
+    </div>
+    <div class="main">
+      <form id="survey-form">
+      <div class="input-fields">
+        <label id="name-label"><b>Your Name: </b>
+        <input id="name" type="text" placeholder="Full Name" required></input></label><br>
+        <br>
+        <label id="email-label"><b>Your Email: </b>
+        <input id="email" type="email" placeholder="example@gmail.com" required></input></label><br>
+        <br>
+        <label id="number-label"><b>Your Age: </b>
+        <input id="number" type="number" min="20" max="99" placeholder="20+" required></input></label><br>
+        <br>   
+      </div>
+      <div class="dropdown">
+        <label id="dropdown-label"><b>Since when did you graduate?</b><br>
+        <select id="dropdown">
+          <option>Already graduated but I'm pursuing Higher degrees. </option>
+          <option>Less than 1 year</option>
+          <option>]1..3 years]</option>
+          <option>]3..5 years]</option>
+          <option>More than 5 years</option>
+          <option>More than 10 years</option>
+        </select><br>
+        <br>   
+        </label>
+      </div>
+      <div class="button">
+        <label id="button=labe"><b>Are you currently employed?</b><br>
+        <input type="radio" name="status" value="employed" checked>Yes, I'm employed</input><br>
+        <input type="radio" name="status" value="yesstudent"/>I am a student and an employee<br>
+        <input type="radio" name="status" value="autoentrepreneur"/>I am an auto-entrepreneur<br>
+        <input type="radio" name="status" value="business"/>I have my own company (bigger scale)<br>
+        <input type="radio" name="status" value="nostudent"/>No, I am only focued on my studies<br>
+        <input type="radio" name="status" value="notemployednow"/>I was employed but no longer am<br>
+        <input type="radio" name="status" value="unemployed"/>I did not occupy any job since my graduation<br>
+        </label>
+        <br>
+      </div>
+      <div class="checkbox">
+        <label id="checkbox-label"><b>What do you think are the main reasons for unemployment's high rates in Tunisia?</b><br>
+        <input type="checkbox" name="reasons" value="crisis" checked />Economic crisis<br>
+        <input type="checkbox" name="reasons" value="recession" />Recession<br>
+        <input type="checkbox" name="reasons" value="technology" />Technological advancments<br>
+        <input type="checkbox" name="reasons" value="bias"/>Discrimination and Bias<br>
+        <input type="checkbox" name="reasons" value="unfitness"/>Outdated curriculums that don't fit today's market needs<br>
+        <input type="checkbox" name="reasons" value="lackofpractice" />Good curriculums in theory but lack of practical skills upon graduation<br>
+        </label>
+        <br>
+      </div>
+      <div class="ending">
+        <label id="text-label"><b>Do you have any comments?</b><br>
+        <textarea style=height:120px;  placeholder="This is an open space, feel free to express yourself .."></textarea><br>
+        <br>
+        <input id="submit" type="submit" value="submit"/>
+        <br>
+        </label>
+      </div>
+
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
